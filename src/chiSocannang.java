@@ -19,5 +19,8 @@ public class chiSocannang {
         else if (bmi < 30) {
                 System.out.println(bmi + "quá cân zồi");
         }
+        else if (bmi>=30 ) {
+            System.out.println( bmi + " Béo phì rồiiii");
+        }
     }
     }

@@ -4,35 +4,41 @@ import java.util.Scanner;
 
 public class kiemTra {
     public static void main(String[] args) {
-        Scanner sc =new Scanner(System.in);
-        System.out.println("nhập n vào !");
-        int n=sc.nextInt();
-        int arr[] =new int[n];
-        for (int i =0 ; i< n; i++) {
-            System.out.println("thêm phân tử thứ " + i + "vào mảng") ;
+        //báo mảng arr, nhập vào n là số phần từ của mảng :
+        // nhập n
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println( "nhập số phần tử của mảng :");
+        int soLuong= sc.nextInt();
+        int[]arr= new int[soLuong];
+        for(int i =0; i <arr.length;i++) {
+            System.out.println( "nhập phần tử thứ " +i + " của mảng");
             arr[i]=sc.nextInt();
         }
-        //in ra tổng chẵn
-        int sum =0;
-        for( int j= 0; j<arr.length; j++) {
-            if ( arr[j] % 2 == 0 ) {
-                sum = sum+ arr[j];
-            }
-        } System.out.println ("Tổng các số chẵn :" + sum);
-        //    Nhập vào a, tìm vị trí a trong mảng
-        System.out.println( " Nhập a vào ");
-        int a = sc.nextInt() ;
-        for (int k =0;k < arr.length; k++) {
-            if (a == arr[k]) {
-                int index= k+1;
-                System.out.println( a + " có vị trí thứ : " + index +" trong mảng");
-                break;
-            }  else {
-                System.out.println( a+ " không có trong mảng");
+        for(int i =0; i <arr.length;i++) {
+            System.out.print( arr[i] + " ");
+        }
+        //in ra các phần tử chẵn trong mảng
+        int sum = 0;
+        for(int i =0; i <arr.length;i++) {
+            if ( arr[i]%2==0) {
+                sum=sum+arr[i];
             }
         }
-    }
-    // Nhập a xóa a khỏi mảng
+        System.out.println( "tổng các phần tử chẵn: " + sum );
+        //Nhập vào a, tìm vị trí a trong mảng
+        System.out.println( " Nhập a");
+        int a = sc.nextInt();
+        for(int i =0; i <arr.length;i++) {
+            if (a==arr[i]) {
+                int vitri = i;
+                System.out.println( " nằm ở vị trí " + vitri + " trong mảng");
+                break;
+            }
+            System.out.println( "không tìm thấy");
+            break;
 
+        }
+    }
 
 }

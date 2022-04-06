@@ -2,7 +2,7 @@ package Introduction;
 
 import java.util.Scanner;
 
-public class ChuyendoiTiente {
+public class ChuyenDoiTienTe {
     public static void main(String[] args) {
         int num = 23000 ;
         int usd,vnd ;

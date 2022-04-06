@@ -16,14 +16,18 @@ public class TimGtriMax {
         }  for (int i =0; i<arr.length; i++) {
             System.out.print( arr[i] + " ");
         }
-        int max = arr [0];
-        int vitri=1;
+
         for (int j =0; j<arr.length; j++) {
+            int max = arr[0];
+            int vitri=1;
             if (arr[j]>max) {
                 max=arr[j];
-                vitri=vitri+1;
+                vitri =vitri+1;
+                System.out.println( "tỉ phú có số tài sản lớn nhất là : " + max + " tỷ đô la ở vị trí :"  + vitri);
+                break;
             }
+
         }
-        System.out.println( "tỉ phú có số tài sản lớn nhất là : " + max + " tỷ đô la ở vị trí :"  + vitri );
+
     }
 }

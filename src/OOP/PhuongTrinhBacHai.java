@@ -45,17 +45,22 @@ public class PhuongTrinhBacHai {
             System.out.println("vô nghiệm");
         }
     }
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println(" nhập a :");
-        double a = sc.nextDouble();
-        System.out.println(" nhập b");
-        double b = sc.nextDouble();
-        System.out.println(" nhập c");
-        double c = sc.nextDouble();
-        PhuongTrinhBacHai ptb2= new PhuongTrinhBacHai( a,b,c);
-        ptb2.KetQua();
+
+    @Override
+    public String toString() {
+        return a + " x^2 + " + b + " y +" +c +" =0" ;
     }
 
-
+    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println(" nhập a :");
+//        double a = sc.nextDouble();
+//        System.out.println(" nhập b");
+//        double b = sc.nextDouble();
+//        System.out.println(" nhập c");
+//        double c = sc.nextDouble();
+       PhuongTrinhBacHai ptb2= new PhuongTrinhBacHai( 1,2,3);
+        System.out.println(ptb2.toString());
+        ptb2.KetQua();
+    }
 }

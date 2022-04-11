@@ -1,6 +1,7 @@
 package vongLap;
 
 public class SoNtdautien {
+
     public static void main(String[] args){
         String str= "Là SNT";
         int count= 1;

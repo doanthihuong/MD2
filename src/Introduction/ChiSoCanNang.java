@@ -1,8 +1,8 @@
-package vongLap;
+package Introduction;
 
 import java.util.Scanner;
 
-public class chiSocannang {
+public class ChiSoCanNang {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double cannang, chieucao, bmi;

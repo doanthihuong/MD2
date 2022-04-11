@@ -8,7 +8,6 @@ public class Uocchungmax {
         int b;
         int c;
         int ucln = 0;
-
         Scanner sc = new Scanner(System.in);
         System.out.println("nhập a vào !");
         a = sc.nextInt();

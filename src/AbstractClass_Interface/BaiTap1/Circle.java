@@ -29,5 +29,10 @@ public class Circle extends Shape {
         radius=radius*percent/100;
 
     }
+
+    @Override
+    public void resize(double percent) {
+
+    }
 }
 

@@ -11,6 +11,7 @@ public class Oto extends PhuongTien {
         Soghe = soghe;
     }
 
+
     public int getSoghe() {
         return Soghe;
     }

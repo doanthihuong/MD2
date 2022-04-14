@@ -1,13 +1,15 @@
 package QLXe;
 
 public interface QuanLy<T> {
+    void them(Oto Oto);
+
     void them(T t);
 
-    void sua(T t);
+    void sua(String id, T t);
 
     void xoa(String name );
 
-    T timkiem(String name);
+    int timkiem(String name);
 
     void sapxep();
 

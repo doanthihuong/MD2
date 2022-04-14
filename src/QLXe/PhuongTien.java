@@ -12,6 +12,7 @@ public class PhuongTien {
     private String ten;
     private int gia;
 
+
     public PhuongTien() {
     }
 

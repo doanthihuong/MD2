@@ -1,5 +1,7 @@
 package MiniTest1;
 
+import javax.xml.soap.Name;
+
 public class StudentsManage implements Manage<Students> {
     private Students[] DanhSach = new Students[3];
     private int Size = 0;
@@ -12,17 +14,16 @@ public class StudentsManage implements Manage<Students> {
     }
 
     @Override
-    public void Edit(String id, Students students) {
-
+    public void Edit(String name, Students students) {
+    DanhSach[Search(name)] =students;
     }
 
     @Override
     public int Search(String name) {
         for (int i = 0; i < Size; i++) {
             if (name == DanhSach[i].getName()) {
-
+                return i;
             }
-
         }
         return -1;
     }
@@ -36,9 +37,16 @@ public class StudentsManage implements Manage<Students> {
 
     public static void main(String[] args) {
         StudentsManage ql =new StudentsManage();
-        Students st1= new Students(1 ," Anh", 18 , 50);
-        Students st2 =new Students( 2, " Ngọc", 20, 70);
+        Students st1= new Students(1 ,"Anh",  18 , 50);
+        Students st2 =new Students( 2, "Ngọc", 20, 70);
         ql.Add(st1);
+        ql.Add(st2);
+        ql.Display();
+        System.out.println(ql.Search( "Mai" ));
+        Students st3 =new Students( 5, "dung", 23, 70);
+        ql.Edit("Ngọc" ,st3 );
+        ql.Display();
+
 
 
     }

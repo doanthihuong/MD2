@@ -1,49 +1,50 @@
 package MiniTest1;
 
 public abstract class Person {
-    private int Id;
-    private String Name;
-    private int Age;
+    private int id;
+    private String name;
+    private int age;
+
 
     public Person() {
     }
 
     public Person(int id, String name, int age) {
-        Id = id;
-        Name = name;
-        Age = age;
+        this.id = id;
+        this.name = name;
+        this.age = age;
     }
 
     public int getId() {
-        return Id;
+        return id;
     }
 
     public void setId(int id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        name = name;
     }
 
     public int getAge() {
-        return Age;
+        return age;
     }
 
     public void setAge(int age) {
-        Age = age;
+        this.age = age;
     }
 
     @Override
     public String toString() {
         return "Person{" +
-                "Id=" + Id +
-                ", Name='" + Name + '\'' +
-                ", Age=" + Age +
+                "Id=" + id +
+                ", Name='" + name + '\'' +
+                ", Age=" + age +
                 '}';
     }
 }

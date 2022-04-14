@@ -1,26 +1,26 @@
 package MiniTest1;
 
 public class Students extends Person{
-    private double Scores;
+    private double scores;
 
     public Students() {
     }
 
     public Students(double scores) {
-        Scores = scores;
+        this.scores = scores;
     }
 
     public Students(int id, String name, int age, double scores) {
         super(id, name, age);
-        Scores = scores;
+        this.scores = scores;
     }
 
     public double getScores() {
-        return Scores;
+        return scores;
     }
 
     public void setScores(double scores) {
-        Scores = scores;
+        this.scores = scores;
     }
 
     @Override

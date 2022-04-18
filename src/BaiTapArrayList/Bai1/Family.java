@@ -28,8 +28,17 @@ public class Family {
         if(indexOffamily ==-1) {
             System.out.print(" Không có");
         } else {
-            familyList.set( indexOffamily,per);
+            familyList.set(indexOffamily,per);
 
+        }
+    }
+//    Xóa
+    public void delete(String name) {
+        int indexOffamily = findByName(name);
+        if(indexOffamily ==-1) {
+            System.out.println("không có");
+        } else {
+            familyList.remove(indexOffamily);
         }
     }
 //    Tìm
@@ -42,7 +51,7 @@ public class Family {
 
     public void display() {
         for(int i= 0; i<familyList.size();i++) {
-            System.out.println(familyList);
+            System.out.println(familyList.get(i));
         }
     }
 }

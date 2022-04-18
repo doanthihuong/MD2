@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ManageStudent {
-    List<Student> students= new ArrayList<Student>();
+    List<Student> students= new ArrayList<>();
 
     public ManageStudent() {
         this.students = students;

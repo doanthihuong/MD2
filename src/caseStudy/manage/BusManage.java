@@ -7,12 +7,8 @@ import java.util.List;
 
 public class BusManage implements GeneralManage {
     List<Bus> busList = new ArrayList<>();
-    public List<Bus> getBusList() {
-        return busList;
-    }
-    @Override
-    public void add(Object o) {
-        Bus bus = null;
+
+    public void add(Bus bus) {
         busList.add(bus);
     }
 
@@ -28,24 +24,35 @@ public class BusManage implements GeneralManage {
         return busList.get(findIndexById(id));
     }
 
-    @Override
-    public void edit(int id, Object o) {
-        Bus bus = new Bus();
+
+    public void edit(int id, Bus bus) {
         busList.set(findIndexById(id), bus);
     }
 
 
-    @Override
     public void delete(int id) {
-        busList.remove(findIndexById(id));
-    }
-
-    @Override
-    public void printAll() {
-        for (int i=0; i<busList.size(); i++) {
-            System.out.println(busList.get(i));
+        int index = findIndexById(id);
+        if (index == -1) {
+            System.out.println(" ID không có trong danh sách ");
+        } else {
+            busList.remove(findIndexById(id));
+            System.out.println("---------- Xóa thành công-------------");
         }
     }
+
+    public void deleteAll() {
+        busList.removeAll(busList);
+    }
+
+    public void printAll(String licensePlate) {
+        for (int i=0; i<busList.size(); i++) {
+            if(busList.get(i).getLicensePlate().contains(licensePlate)){
+                System.out.println(busList.get(i));
+            }
+        }
+        System.out.println("Xe không có danh sách");
+    }
+
 
 
     public int findIndexById(int id) {

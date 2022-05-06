@@ -3,7 +3,7 @@ package caseStudy.mode1;
 public class
 
 
-Customer {
+Customer {`
     private String name;
     private long phoneNumber;
 

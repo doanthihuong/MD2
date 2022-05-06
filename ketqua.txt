@@ -1,0 +1,5 @@
+nghiệm : NaN
+tông: 0.0
+tích: 0.0
+ min: 0.0
+ max: 0.0

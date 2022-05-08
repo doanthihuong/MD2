@@ -5,14 +5,14 @@ public class Receipt {
   // pay time :  thời gian trả
     private String identity;
     private String name;
-    private int borrowedTime;
-    private int payTime;
+    private double borrowedTime;
+    private double payTime;
     private Bicycle bicycle;
 
     public Receipt() {
     }
 
-    public Receipt(String identity, String name, int borrowedTime, int payTime, Bicycle bicycle) {
+    public Receipt(String identity, String name, double borrowedTime,double payTime, Bicycle bicycle) {
         this.identity = identity;
         this.name = name;
         this.borrowedTime = borrowedTime;
@@ -36,7 +36,7 @@ public class Receipt {
         this.name = name;
     }
 
-    public int getBorrowedTime() {
+    public double getBorrowedTime() {
         return borrowedTime;
     }
 
@@ -44,7 +44,7 @@ public class Receipt {
         this.borrowedTime = borrowedTime;
     }
 
-    public int getPayTime() {
+    public double getPayTime() {
         return payTime;
     }
 

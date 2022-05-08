@@ -1,9 +1,7 @@
 package caseStudy;
 
-import QLSVArray.main;
 import caseStudy.manage.BicycleManage;
 import caseStudy.mode1.Bicycle;
-import caseStudy.mode1.Customer;
 
 import java.util.Scanner;
 
@@ -44,7 +42,7 @@ public class MainBicycle {
 
             switch (choice) {
                 case 1:
-                    System.out.println("======Danh Sách Phòng===== ");
+                    System.out.println("======Danh Sách Hóa đơn===== ");
                     bicycleManage.display();
                     break;
                 case 2:
@@ -115,8 +113,4 @@ public class MainBicycle {
             }
         } while (choice >= 1 && choice <= 11);
     }
-    public static void main(String[] args) {
-        new MainBicycle();
-    }
-
 }

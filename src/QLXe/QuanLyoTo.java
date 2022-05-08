@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class QuanLyoTo implements QuanLy<Oto>{
     private Oto []DanhSach= new Oto[3];
      private  int size = 0;
+
     @Override
     public void them(Oto oto) {
         DanhSach[size]=oto;
